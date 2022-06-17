@@ -14,6 +14,7 @@ public class SudokuSolver {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        System.out.println("prueba en Intellij");
         System.out.println("hola mundo!");
     }
     
