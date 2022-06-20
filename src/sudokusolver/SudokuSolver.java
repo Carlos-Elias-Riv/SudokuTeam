@@ -10,13 +10,36 @@ package sudokusolver;
  */
 public class SudokuSolver {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        System.out.println("prueba en Intellij");
-        System.out.println("hola mundo!");
-        System.out.println("holaaaaaa");
+    private int[][] sudoku;
+    private ConjuntoA<Integer>[][] sudokuCon;
+
+    public SudokuSolver() {
+        sudoku = new int[9][9]; 
+        sudokuCon = new ConjuntoA[3][3];
+        
     }
+    
+    public boolean estaEnFila(int fila, int num){
+        return true;
+    }
+    
+    public boolean estaEnColumna(int col, int num){
+        return true;
+    }
+    
+    public boolean estaEnCuadro(int fila, int col, int num){
+        return true;
+    }
+    
+    public boolean numeroValido(int fila, int col, int num){
+        return true;
+    } 
+    
+    public void resuelveSudoku(){
+        
+    }
+    
+    
+    
     
 }
