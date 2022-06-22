@@ -39,9 +39,9 @@ public class SudokuSolver {
                     ultimoCero[1] = j;
                 }
             }
-        
+
     }
-    
+
     public boolean estaEnFila(int fila, int num){
         int i =0;
         while(i<9 && sudoku[fila][i]!=num){
@@ -50,7 +50,7 @@ public class SudokuSolver {
 
         return i<9;
     }
-    
+
     public boolean estaEnColumna(int col, int num){
         int i =0;
         while(i<9 && sudoku[i][col]!=num){
@@ -60,24 +60,24 @@ public class SudokuSolver {
         return i<9;
 
     }
-    
+
     public boolean estaEnCuadro(int fila, int col, int num){
 
         return sudokuCon[fila/3][col/3].contiene(num);
     }
-    
+
     public boolean numeroValido(int fila, int col, int num){
         return !estaEnFila(fila, num) && !estaEnColumna(col, num) && !estaEnCuadro(fila, col, num);
-    } 
-    
+    }
+
     public void resuelveSudoku(){
 
 
 
 
     }
-    
-    
-    
-    
+
+
+
+
 }
